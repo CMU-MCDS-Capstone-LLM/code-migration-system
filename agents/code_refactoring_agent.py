@@ -28,7 +28,10 @@ class CodeRefactoringAgent:
     def refactor_code(self, code_sections, code_changes, simulation = False):
         """
         1. Takes in the code sections from the code analysis agent and the code changes from the previous function
-        2. Simulation is a boolean value which will determine if the changes are made to actual codebase or simulate for testing purposes
+        2. Simulation is a boolean value which will determine if the 
+        changes are made to actual codebase or simulate for testing purposes
+        If the changes are a simulation, manually change the git branch and work on a temp branch.
+        3. Based on the model output write to the respective branches. (Manual process)
         """
         
 
